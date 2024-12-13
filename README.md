@@ -1,2 +1,2 @@
 # resume_website
-A Simple Web Application built By ME
+A Simple Website built By ME
