@@ -16,10 +16,7 @@ body {
             font-size: 2.5em;
             animation: glow 1.5s infinite alternate;
         }
-        @keyframes glow {
-            from { text-shadow: 0 0 5px #fff; }
-            to { text-shadow: 0 0 20px #00ffcc; }
-        }
+      
         nav {
             margin-top: 1em;
         }
