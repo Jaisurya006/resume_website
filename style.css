@@ -1,48 +1,121 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background: #f0f4f8; /* Light background for a clean look */
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
+/* Header Styles */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #4A90E2; /* A vibrant blue color */
+    color: white;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-nav ul {
-    list-style: none;
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Larger font size for the title */
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+header nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Card shadow */
+}
+
+main h2 {
+    color: #4A90E2; /* Matching color for headings */
+    border-bottom: 2px solid #4A90E2; /* Underline effect */
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+ul li {
+    background: #f9f9f9; /* Light background for list items */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for list items */
+    transition: background 0.3s; /* Smooth transition for hover effect */
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+ul li:hover {
+    background: #e1f5fe; /* Light blue on hover */
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #ccc;
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between table cells */
+    margin-top: 20px;
 }
 
-h2 {
-    color: #333;
+table th, table td {
+    border: 1px solid #ddd; /* Light border for table cells */
+    padding: 10px;
+    text-align: left;
 }
 
+table th {
+    background: #4A90E2; /* Header background color */
+    color: white;
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px 0;
     background: #333;
-    color: #fff;
+    color: white;
+    padding: 15px 0;
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px; /* Space above footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em; /* Smaller title on mobile */
+    }
+
+    header nav a {
+        margin: 0 5px; /* Less margin on mobile */
+    }
+
+    main {
+        margin: 10px; /* Less margin on mobile */
+    }
 }
