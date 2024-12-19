@@ -1,70 +1,88 @@
-body {        
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(120deg, #84fab0, #8fd3f4);
-            color: #333;
-        }
-        header {
-            background: #003366;
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            animation: glow 1.5s infinite alternate;
-        }
-        @keyframes glow {
-            from { text-shadow: 0 0 5px #fff; }
-            to { text-shadow: 0 0 20px #00ffcc; }
-        }
-        nav {
-            margin-top: 1em;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-            font-size: 1.2em;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #00ffcc;
-        }
-        main {
-            padding: 2em;
-            text-align: center;
-            animation: fadeIn 2s ease;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        main h2 {
-            font-size: 2em;
-            color: #003366;
-        }
-        footer {
-            background: #003366;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9em;
-        }
-        footer a {
-            color: #00ffcc;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif; /* Changed font for a different look */
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Soft gradient background */
+    color: #444; /* Darker text color for better readability */
+}
+
+/* Header Styles */
+header {
+    background: #2c3e50; /* Darker blue-gray color */
+    color: #ecf0f1; /* Light text color */
+    padding: 1.5em 0; /* Increased padding for a more spacious header */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em; /* Slightly larger font size */
+    animation: pulse 1.5s infinite alternate; /* Changed animation */
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); } /* Pulsing effect */
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 1em;
+}
+
+nav a {
+    color: #ecf0f1; /* Light color for links */
+    text-decoration: none;
+    margin: 0 1.5em; /* Increased margin for spacing */
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+nav a:hover {
+    color: #1abc9c; /* Teal color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 2.5em; /* Increased padding for more space */
+    text-align: center;
+    animation: slideIn 1.5s ease; /* Changed animation */
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); } /* Slide in from the left */
+    to { opacity: 1; transform: translateX(0); }
+}
+
+main h2 {
+    font-size: 2.5em; /* Larger heading size */
+    color: #2c3e50; /* Darker color for headings */
+}
+
+/* Footer Styles */
+footer {
+    background: #2c3e50; /* Same as header for consistency */
+    color: #ecf0f1; /* Light text color */
+    text-align: center;
+    padding: 1.5em 0; /* Increased padding */
+    position: relative; /* Changed to relative for better layout */
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #1abc9c; /* Teal color for footer links */
+    text-decoration: none;
+    font-size: 1.1em; /* Slightly smaller font size */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
